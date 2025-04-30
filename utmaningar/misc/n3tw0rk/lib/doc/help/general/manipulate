@@ -1,0 +1,31 @@
+NAME
+        manipulate - change the content of the fields of a header
+
+SYNOPSIS
+        manipulate <type> header 
+        manipulate <type> header <field>:<value>
+
+DESCRIPTION
+        Change the values of the fields of a header you are carrying. Making 
+        sure your headers are in order is necessary if you wish to get 
+        anywhere in the network. Various computers, systems and devices will
+        only accept you if your fields have the expected content.
+
+        What is the right content? You will have to be creative and find out
+        for your selves.
+         
+OPTIONS
+ 	<type>  - the type of header you wish to manipulate. You need to be
+                  carrying the header in order to manipulate it.
+        <field> - the specific field you wish to manipulate, either specifying
+                  its name or its place in the header (starting with 1 in the
+                  upper left corner of the header). 
+                  Leaving field and value unspecified lists the avaliable 
+                  fields and their descriptions.
+        <value> - The value you wish to set the field to. In most cases this
+                  is just an integer value of some size. But some field might
+                  have a different format in which case that format should
+                  be used when specifying the value.
+	
+SEE ALSO
+	network, status, headers

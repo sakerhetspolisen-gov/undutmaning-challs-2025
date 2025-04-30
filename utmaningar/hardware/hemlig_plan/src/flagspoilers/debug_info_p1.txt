@@ -1,0 +1,54 @@
+U-Boot 2025.01 (Jan 08 2025 - 10:32:00)
+
+CPU: ARM Cortex-A53 (500 MHz)
+Model: MK-500 Core Module for Spaceship Systems 
+DRAM: 512 MiB Flash: 256 MiB 
+Clocks: CPU:500MHz, BUS:200MHz 
+NAND: 128 MiB 
+In: serial 
+Out: serial 
+Err: serial 
+Net: eth0: MK-500 Ethernet 
+Hit any key to stop autoboot: 3 2 1 0
+Booting kernel from NAND... 
+
+## Loading kernel from nand0, offset 0x00080000 ...
+Image Name: MK-500 Linux Kernel 5.10.12
+Image Type: ARM Linux Kernel Image (uncompressed) 
+Data Size: 4.2 MiB = 4,398 KiB = 4,504,576 bytes 
+Load Address: 0x80008000 
+Entry Point: 0x80008000 
+Verifying Checksum ... OK 
+
+## Flattened Device Tree blob at 81000000 Booting using the fdt blob at 0x81000000 Loading Device Tree to 8ff9f000, end 8ff9ff37 ... OK 
+
+Starting kernel ... 
+[ 0.000000] Booting MK-500 Sateliete Communication System...
+[ 0.000000] Linux version 5.10.12 (build@dev) (gcc version 9.3.0 (GCC)) #1 SMP Thu Jan 8 10:31:12 2025 
+[ 0.000000] CPU: ARMv8 Processor [410fd034] revision 4 (ARMv8), cr=50c5383d 
+[ 0.000000] Machine model: MK-500 Core Module 
+[ 0.000000] Memory policy: Data cache writealloc 
+[ 0.000000] On node 0 totalpages: 131072 
+[ 0.000000] DMA zone: 512 pages used for memmap 
+[ 0.000000] DMA zone: 0 pages reserved 
+[ 0.000000] DMA zone: 131072 pages, LIFO batch: 31 
+[ 0.000000] Reserved memory: created DMA memory pool at 0x8f000000, size 32 MiB 
+[ 0.000000] Running in space mode: Enabled
+
+[00:00:00.000] [INFO] MK-500 Booting... Firmware version: 5.1.7 
+[00:00:00.015] [INFO] Initializing system for spaceship deployment... 
+[00:00:00.032] [INFO] Establishing connection with peripherals: 
+[00:00:00.045] [INFO] GPIO configured: Port A, Pins 1-8, Mode: Output 
+[00:00:00.067] [INFO] UART1 initialized for UI device. Baud rate: 115200 
+[00:00:00.089] [INFO] UART2 initialized for radio device. Baud rate: 9600 
+[00:00:00.102] [INFO] Peripheral connections established. 
+
+[00:00:00.123] [INFO] Sending handshake to UI device... 
+[00:00:00.134] [INFO] Handshake message: "MK-500 READY" 
+[00:00:00.145] [INFO] Waiting for response from UI device... 
+[00:00:00.178] [INFO] UI device response received: "UI ONLINE" 
+[00:00:00.200] [INFO] Sending handshake to radio device... 
+[00:00:00.234] [INFO] Handshake message: "RADIO LINK READY" 
+[00:00:00.267] [INFO] Radio device response received: "RADIO ONLINE" 
+
+[00:00:01.023] [INFO] AES key loaded from secure storage: 

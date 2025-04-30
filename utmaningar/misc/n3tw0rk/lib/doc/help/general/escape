@@ -1,0 +1,15 @@
+NAME
+        escape - escape from current task
+
+SYNOPSIS
+	!<command>
+
+DESCRIPTION
+	The exclamation mark provides a way to escape from your current task.
+        If you have already typed characters on the current line, delete
+        them before using the escape sequence.
+
+OPTIONS
+        command - the normal command to execute. Do not put a space between
+                  the exclamation mark and the command. 
+

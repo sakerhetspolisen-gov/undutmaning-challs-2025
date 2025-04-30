@@ -1,0 +1,37 @@
+The encoded data is in the form of an AC-3 audio file
+which can be played back with mpv or other players.
+
+To decode:
+ffmpeg and fldigi can be used for decoding the generated file.
+
+0. Install dependencies
+  * apt-get install ffmpeg fldigi # for Ubuntu
+
+1. Convert to .WAV:
+  * ffmpeg -f ac3 -i challenge.bin challenge.wav
+
+2. Open fldigi:
+  * fldigi
+
+3. Skip the "Setup Wizard" if presented
+  * Press "Finish"
+
+4. Select mode of operation
+  * In the menu, press "Op Mode" -> "RTTY" -> "RTTY-45"
+  * Under the frequency indicator (default 14070.000)
+    there is a dropdown menu where the default is "USB".
+    Select "LSB".
+
+5. Load the audio
+  * In the menu, press "File" -> "Audio" -> "Playback"
+  * Select out.wav
+  * Prompt: "Play continuous loop?", press "Yes"
+
+6. Align the decoder
+  * In the black-blue-yellow waterfall at the bottom of the
+    fldigi-window, align the vertical bars to the center of
+    the yellow stripes and single-click.
+
+7. Done
+  You should now see the message being decoded in the fldigi UI.
+

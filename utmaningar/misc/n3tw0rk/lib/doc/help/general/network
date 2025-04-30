@@ -1,0 +1,20 @@
+Welcome to the network!
+=======================
+
+What is the network?
+--------------------
+The network is a CTF challenge in a somewhat unconventional format. In this 
+challenge you are a sentient piece of data that, when you log in, find yourself
+in the outskirts of an unknown network. Somewhere in the network is the FLAG
+and you need to find it.
+
+How does it work?
+-----------------
+You don't have much information, and you need to work a lot of things out for
+yourself. This network does resemble a TCP/IP network, but there are some 
+slight, and some major, deviations here and there.
+
+You will need to figure out how to traverse the network, how to follow the 
+rules and how to get past obstacles that you might face.
+
+Good luck!

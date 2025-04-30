@@ -1,0 +1,6 @@
+.git
+.vscode
+.gitignore
+README.md
+bin
+*.o

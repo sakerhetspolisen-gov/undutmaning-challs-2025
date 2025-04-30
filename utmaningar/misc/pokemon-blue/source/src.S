@@ -1,0 +1,11 @@
+SECTION "section", ROM0
+
+start: LOAD "entry", WRAMX[$D8B5]
+
+entry:
+	ld hl, flag
+	jp $3C49
+
+flag:
+	db $00, $85, $8b, $80, $86, $86, $80, $8d, $7f, $80, $91, $9c, $7f, $94, $8d, $83, $94, $93, $51
+	db $9a, $89, $80, $86, $e3, $80, $8b, $92, $8a, $80, $91, $e3, $86, $84, $8d, $f7, $9b, $57

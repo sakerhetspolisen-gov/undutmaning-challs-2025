@@ -1,0 +1,6 @@
+0. Install dependencies
+  apt-get install python3-scipy ffmpeg # for Ubuntu
+
+1. Create challenge.bin 
+  python3 encode.py "insert message here"
+

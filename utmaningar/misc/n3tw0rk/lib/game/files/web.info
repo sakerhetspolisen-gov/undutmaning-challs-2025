@@ -1,0 +1,19 @@
+- Interfaces -
+ eth0: inet 198.51.100.15 netmask 255.255.255.128 broadcast 198.51.100.127
+       ether 00:14:22:03:5A:B2 mtu 1500
+
+- ARP table -
+ Address          HWtype  HWaddress            Iface
+ 198.51.100.1     ether   00:03:32:F2:33:22    eth0
+ 
+- Current IP routing table -
+ Destination     Gateway         Genmask         Use Iface
+ default         198.51.100.1    0.0.0.0            eth0  
+ 198.51.100.0    0.0.0.0         255.255.255.128    eth0  
+
+- Netstat -
+ Proto     Local Address           Foreign Address         State
+ tcp       0.0.0.0:22              *:*                     LISTENING
+ tcp       0.0.0.0:80              *:*                     LISTENING
+ tcp       0.0.0.0:443             *:*                     LISTENING
+ tcp       198.51.100.15:22        198.51.100.194:21456    ESTABLISHED

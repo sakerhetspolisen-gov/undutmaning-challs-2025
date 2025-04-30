@@ -1,0 +1,23 @@
+NAME
+        general - the 'general' commands
+
+SYNOPSIS
+        this is no command, just information
+
+DESCRIPTION
+        The following commands are available everywhere
+
+        Activities
+        ----------
+        drop|get|take|give <item>, look, look at|examine <item>
+        
+        Information
+        -----------
+        status, i(inventory), headers
+
+        Communication
+        -------------
+        '(say), who 
+
+SEE ALSO
+        the specific help-page, see also "help topics".

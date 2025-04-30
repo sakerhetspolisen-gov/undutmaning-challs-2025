@@ -1,0 +1,10 @@
+NAME
+        quit - leave the game
+
+SYNOPSIS
+        quit
+
+DESCRIPTION
+        You will be disconnected and everything you carry will 
+        disappear. If you reconnect after quitting you will be back
+        at the start, carrying nothing but knowledge.

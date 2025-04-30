@@ -1,0 +1,9 @@
+Instructions
+------------
+1. Retrieve the email with subject IMPORTANT (you should have it in your inbox soon)
+2. Print information in the mail
+3. Delete the mail from your inbox
+4. Pick up your printed document
+5. Initiate world domination!
+
+The information is for your eyes only. Keep it secret, keep it safe!

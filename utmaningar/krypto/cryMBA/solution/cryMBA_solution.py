@@ -1,0 +1,85 @@
+# Copied from challenge
+def encrypt(message, key):
+	mask = 2**512-1
+	t, k = message, key
+	for i in range(3):
+		t -= -83*t*~(300*t*(517*t^-33*t))*(101*t&~(-91*k-75*t-2*(-33*t|-16*t)))+k
+		t &= mask
+		k -= -(-((~(-(36*t*44)&(-24*t&-53*k))+((-73|-82*k)+~(-65*t*79*k)))*~((~(100*k&-85*t)-~(25*t^122*k))*~(~(-118*k&127*k)&68*k)))+-122*t)
+		k &= mask
+		t += 2+(~(-(102*t&~(-~(-(13*t^-24*t)+2*(54|-61*k)))&-3384*k*t))&(96*t*~(140*k)^-(78*k&(57*k|72*t))+27*t*~(-6*k-31*t)))+(-35*k&-~(-(120*t^-69*t)+(71*k&70*t)+(46*t|-(-123*k&37*t))))+(39*k|~(113*k-~(124*k+69*t)*~(126*k&-19*k))|104*k+(-28*t^-29*t))
+		t &= mask
+		k += ~(~(~(-k*(160-6201*t*~(-160*k)))*(-(-25*k&-34*k)&-2*(-10*k^25*t))&-(157*t&5*k-58*t)+(~(93*k&59*k)&(-67*k|-21*k)))*(2*(5*k&-46*t&~(40*k-51*t))+3612*k*k^-(63*t|60*t)+t*(-700*k-880*t)+(125*k^120*t))|-((115*k+t*(-121+344*k))*(~(-73*k+29*t)&2*(-47*k|-33*t))|(-2*(-4*k^59*k)^-1111*k*t)&(-93*t|-43*k-12*t))+(-(~(165*k)&(-71*t|45*t))+(889*k*t^-93*k-6*t)|-9078*k*k*(106*k&77*t)^~(98*k)&(-128*k^-53*t)))
+		k &= mask
+		t ^= -(-(-(120*k&-45*k)|94*k+(67*t|~(79*k)|-(-63*t|-(117*k&121*t)^118*k+41*t)|-125*t*~(112*k-120*t))|-2304*t*t^(41*k|-64*t))^84*t*~(35*k+(121*k^91*t-(-(15*t^-108*t^3689*k*t)|~(65*k^105*t)&(-114*t^-57*t)))))
+		t &= mask
+		k ^= ~(-(-(-~(-15*k+(12*t^-71*t))&-~(38*k-(75*k^-78*k)))|2*(k*(-2173*k-3224*t)^-18*k&-23*k)*(-~(18*k+2*(-31|-27*t))|-~(-84*k&79*k&~(107*t))))+k*(51-6375*t+51*(-75*k|19*k)+(72+(-2376*k-792*t)*(-91*k^-87*k))*(84&99*t))-(-(-~(~(-4*(4*k^-17*t))&(21*t^-86*t))|-46&33*k&~(-87*t))&(-(-~(-63*k-116*t)|-9*k-128*t)|4*(45*k^102*t)*(-15*t^-8*t)-281637*t*k*k))-(~(63*k|-125*k|3528*k*t)^-59+61*k+23*t)+24*t*(84&99*t)+(-1014*k*t*(39*t^-71*t)^-28*k&~(-(-40&73*k)^2553*k*t))+(119*t*~(-9*t*(-113*k|29*t))|~(57*k^76*k^-125*k)&-104*k-120*t))|(-(-86*k+2*(49*t&~(713*k*t))|-49*t&-35+3*k)+(-(-112*k^-(95^-5*k))|-24*k&115*t)&2+13*k+49*t+(30*k&(88|9*k))+(6*t^-83*t)+(-97*t^(27*t|44*t)))*(-~(-83*t-2*~(-572*k*k)*(-47*k|22*t)+(-101*k&79*k*~(88*k|-121*t)))^t*(-90-45*(79*k|(125*k-t)*(-102*k^21*t))-45*(-125*k^31*k^-37*t^-123*k-107*t))+(~(79*k|(125*k-t)*(-102*k^21*t))+~(-125*k^31*k^-37*t^-123*k-107*t))*(100*k&-(-85*k^-75*t))^(-~(3150*t*t^(47*k|-60*t))*(-111*k|-14*k)|78+9394*t-4*(21*k|-27*t)))
+		k &= mask
+		t += -~(-47*t&~(-45*t)&(97*k-89*t)*(41*k&-91*t*~((-8*k&~(-81*k*~(23*k+(-(-119*t+(~(-62*t|-41*t|-57*k&46*t)+(120*k|29*k))*(-~(32*t^83*k+83*t)^-36*k&5*t)|48+69*t)&(67*k|75*k^2*(-31*t&(49+k*(125+k*(-19404+6286896*t*t+49500*k*~(-324*t*t))-40500*t*t)-15876*t*t)*(63*k|29*t)))))*(13*t^11*t)))+(78*k|-(13*k|~(t*(-51-4750*k))|55*k-(-124*t&-(-27&~(~(51*t&-(23*k&-73*t))*~(89*t&(122*k|-115*t)))))|-123*t&2*~(-13*k*~(42*k-31*t))*(60*k|-17*k))))))
+		t &= mask
+		k -= -41*k^83*t^~(~(-k*(166+10375*t+83*(~(29*k-30*t)&(115*t|-94*t))))*(-108*t^-3-8*(~(-23*k)&(-6^k))-(-(123*k^70*k)^7171*k*t))^(26|-~(-(-55*t&~(-6784*t*t))+(-26*t&-(-83&109*k)))*(~(50*k|103*k|-112*k-44*t)&k*t*(-133644*k-57276*t)))|-191*t^-(8*k^~(2*(-49^39*k)-9595*k*k*~(2*(-49^39*k)))*(~(119*k)|-125-63*k))^-~(8*t+(-2*k&-41*t&~(2*(-40*k^19*t))))^-9*t&~(-9540*t*t^-19*k+122*t))
+		k &= mask
+	return t
+C = 0x3e53fe89b7565f2a89a4b7927e984ffe3d66949fe0a6c161fe88111de308a56d56d3396776b6461cf081068263905399e1a02946d63da41ee6953b6c21bc6126  # From challenge
+M = int.from_bytes(b"nothing up my sleeve", byteorder="big")
+
+## Solution
+"""
+MBA uses bitwise and arithmetic operators `&, |, ~, ^, +, -, *` but not `>>` or division.
+This means the output LSB is only dependent on the input LSB and no higher bits.
+Output bit `n` is only dependent on bits `n, n-1, n-2, n-3 ... 0`.
+In other words, a solution to the 512-bit mask is also a valid solution to any smaller bit mask.
+As such every bit can be brute forced from least significant to most significant and keeping track of possible solutions.
+"""
+
+
+bits = 512
+
+def is_printable(bstr):
+	printable = b"0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#$%&()*+,-./:;<=>?@[\\]^_`{|}~ "
+	for byte in bstr:
+		if byte not in printable:
+			return False
+	return True
+branches = [2]
+ks1 = [0, 1]
+ks2 = []
+for bi in range(1, bits):
+	branches.append(len(ks1))
+	if bi % 8 == 7:
+		# Ascii always have MSB zero, ks2 = ks1
+		for k in ks1:
+			k_str = k.to_bytes((bi+1)//8, byteorder="big")
+			if is_printable(k_str):
+				ks2.append(k)
+		print("Removed", len(ks1) - len(ks2), "branches because they were not ascii.")
+		ks1 = ks2
+		ks2 = []
+		continue
+
+	for k1 in ks1:
+		print(f"k = {k1:0128x}")
+		k2 = k1 + 0*2**bi
+		if (C ^ encrypt(M, k2)) % 2**(bi+1) == 0:
+			ks2.append(k2)
+		k2 = k1 + 1*2**bi
+		if (C ^ encrypt(M, k2)) % 2**(bi+1) == 0:
+			ks2.append(k2)
+
+	ks1 = ks2
+	ks2 = []
+
+print("All branches:", branches)
+print("Total branches:", sum(branches))
+
+flag_prefix = b"undut{"
+possible_flags = []
+for k in ks1:
+	possible_flag = int.to_bytes(k, bits//8, byteorder="big")
+	if possible_flag.startswith(flag_prefix):
+		possible_flags.append(possible_flag)
+assert len(possible_flags) == 1
+flag = possible_flags[0]
+print("FLAG FOUND:", flag)
+
+assert flag == b"undut{ciphers_require_>>_for_confusion_and_diffusion_to_be_good}"

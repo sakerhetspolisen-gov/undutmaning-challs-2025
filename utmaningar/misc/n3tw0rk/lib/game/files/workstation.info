@@ -1,0 +1,40 @@
+- Interfaces -
+ Ethernet adapter Ethernet:
+
+      Connection-specific DNS Suffix . : n3tw0rk.ex
+      Description. . . . . . . . . . . : Intel(R) Ethernet adapter
+      Physical Address . . . . . . . . : 60-5B-30-FE-0B-98
+      IPv4 Address . . . . . . . . . . : 198.51.100.199(Preferred)
+      Subnet Mask. . . . . . . . . . . : 255.255.255.128
+      Default Gateway. . . . . . . . . : 198.51.100.129
+      DNS Servers. . . . . . . . . . . : 198.51.100.25
+
+- ARP table -
+ Interface: 198.51.100.199 --- 0x1
+  Internet Address     Physical Address     Type
+  198.51.100.129       00-03-32-f2-33-23    dynamic
+  198.51.100.182       c0-fb-f9-0b-72-9e    dynamic
+  128.51.100.255       ff-ff-ff-ff-ff-ff    static
+  255.255.255.255      ff-ff-ff-ff-ff-ff    static
+
+- Current IP routing table -
+ Network Destination         Netmask          Gateway       Interface   Metric
+           0.0.0.0           0.0.0.0   198.51.100.129   198.51.100.199      23
+         127.0.0.0         255.0.0.0         On-link         127.0.0.1     331
+         127.0.0.1   255.255.255.255         On-link         127.0.0.1     331
+   127.255.255.255   255.255.255.255         On-link         127.0.0.1     331
+    198.51.100.128   255.255.255.128         On-link    198.51.100.199     251
+    198.51.100.199   255.255.255.255         On-link    198.51.100.199     251
+    198.51.100.255   255.255.255.255         On-link    198.51.100.199     251
+         224.0.0.0         240.0.0.0         On-link         127.0.0.1     331
+         224.0.0.0         240.0.0.0         On-link    198.51.100.199     251
+   255.255.255.255   255.255.255.255         On-link         127.0.0.1     331
+   255.255.255.255   255.255.255.255         On-link    198.51.100.199     251
+
+- Netstat -
+ Proto     Local Address           Foreign Address         State
+ TCP       0.0.0.0:135             *:*                     LISTENING
+ TCP       0.0.0.0:445             *:*                     LISTENING
+ TCP       198.51.100.33:34887     198.51.100.25:110       ESTABLISHED
+ TCP       198.51.100.33:43891     198.51.100.33:1080      ESTABLISHED
+ TCP       198.51.100.199:55643    198.51.100.182:631      ESTABLISHED

@@ -1,0 +1,68 @@
+{
+    "sond": {
+      "namn": "O.P.S.",
+      "version": "1.0.0 BETA",
+      "tillverkare": "Kenneth Inc Ltd.",
+      "status": "aktiv",
+      "uppdrag": {
+        "typ": "solsystemsforskning",
+        "mål": "Utred förutsättningarna för etablerande av Dyson Sfär (eller Bälte)"
+      },
+      "specifikationer": {
+        "hastighet_km_s": 215625,
+        "max_avstånd_km": 150000000,
+        "startdatum": "2025-03-29",
+        "kraftkälla": "fusion",
+        "kommunikation": {
+          "typ": "radiovåg",
+          "frekvens_mhz": 500
+        }
+      },
+      "system": {
+        "sensorer": [
+          "solsensor",
+          "avståndsmätare",
+          "strålningdetektor",
+          "temperaturmätare"
+        ],
+        "lagring_gb": 512,
+        "processor": "quad-core 2.5 GHz",
+        "flagga": "undut{Ett steg i taget tar dig till målet, oavsett avstånd. Förutsatt att du inte går åt fel håll.}"
+      },
+      "säkerhet": {
+        "brandvägg": "aktiverad",
+        "fjärrstyrning": "avstängd",
+        "låsskåp": true
+      },
+      "data": {
+        "rapporter": [
+            {
+                "datum": "2025-03-29 12:01:10",
+                "status": "ok",
+                "information": "Max hastighet uppnådd."
+            },
+            {
+                "datum": "2025-03-29 12:00:00",
+                "status": "ok",
+                "information": "Acceleration inledd. Uppdrag påbörjat."
+            },
+            {
+                "datum": "2025-03-28 23:42:56",
+                "status": "fel",
+                "information": "Strömavbrott i radiovågskommunikationen"
+            }
+        ],
+        "analyser": [
+          {
+            "datum": "2025-03-29 11:59:59",
+            "resultat": "Strålningsnivåer normala."
+          },
+          {
+            "datum": "2025-03-29 11:53:21",
+            "resultat": "Alla system fungerar korrekt. Redo för avfärd."
+          }
+        ]
+      }
+    }
+  }
+  

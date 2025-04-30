@@ -1,0 +1,21 @@
+NAME
+    inventory - list your possessions
+    i         - the command 'i' is a global alias for 'inventory'!
+
+SYNOPSIS
+	inventory or i
+
+DESCRIPTION
+    Show a list of everything you are carrying. The contents of containers
+	are not shown. They are seen using the 'look at' or 'exa[mine]'
+	commands.
+
+	The inventory can take two forms based on your preference as set using
+	the command 'options inventory <on/off>'.
+
+    When you get a header (or other item) it is shown in your inventory, 
+	but its content is not shown. To view the contenet of the headers use
+	the commands 'headers', 'status' or look at yourself.
+
+SEE ALSO
+	look, options, headers, status

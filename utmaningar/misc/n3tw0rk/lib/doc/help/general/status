@@ -1,0 +1,13 @@
+NAME
+        status - show your current status
+
+SYNOPSIS
+        status
+
+DESCRIPTION
+        The status command shows your current status, which means that you
+        see all data you are currently consisting of. Its a bit like looking
+        at yourself.
+         
+SEE ALSO
+	headers

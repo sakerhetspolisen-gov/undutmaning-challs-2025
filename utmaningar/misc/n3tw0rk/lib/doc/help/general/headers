@@ -1,0 +1,30 @@
+NAME
+        headers - show the headers you are carrying
+
+SYNOPSIS
+        headers | headers all
+        headers <layer>
+
+DESCRIPTION
+        The status command shows your current status, which means that you
+        see all data you are currently consisting of. Its a bit like looking
+        at yourself.
+         
+OPTIONS
+	[none] or all - list all your headers
+
+	<layer>       - a string that specifies which layer you want to list
+                        the headers for. Possible strings are: 
+
+                                physical aka datalink aka 1  
+                        
+                                network aka 2
+                        
+                                transport aka 3
+                        
+                                application aka 4
+                        
+                                data
+
+SEE ALSO
+	status

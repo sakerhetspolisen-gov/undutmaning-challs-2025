@@ -1,0 +1,14 @@
+NAME
+        help - get help on a specific topic
+
+SYNOPSIS
+        help topics
+        help <topic>
+
+DESCRIPTION
+        This command prints a help page on a specific topic.
+
+OPTIONS
+        topics     - display the list of general topics and commands on which
+                     help is available.
+        <topic>    - display a help page on a specific topic.

@@ -1,0 +1,12 @@
+NAME
+        who - list active packets
+
+SYNOPSIS
+	who 
+
+DESCRIPTION
+        Get a listing of people logged on, in thier binary representation
+        obviously.
+
+SEE ALSO
+        options
